@@ -7,7 +7,7 @@ def create_app():
     app = Flask(__name__)
     
     # Налаштування бази даних
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://<username>:<password>@<host>:<port>/<database>'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://avnadmin:AVNS_O3z9kbbw2LFc1tKyV82@pg-35e910ad-istu-00f2.b.aivencloud.com:17636/defaultdb?sslmode=require'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     
     db.init_app(app)
